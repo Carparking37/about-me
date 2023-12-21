@@ -1,8 +1,11 @@
-const imgBackBtnEL = document.getElementById('img-back')
+const imgBackBtnEL = document.getElementById('img-back-btn')
 let arrayOfhiddenImages=[];
-function imagesBack() {
+function imagesbvack() {
     arrayOfhiddenImages.map((imageId) => {
-    })
+const hiddenImage = document.getElementById(imageId);
+console.log(hiddenImage)
+hiddenImage.style.display='block'
+     })
     imgBackBtnEL.style.display = 'none';
     arrayOfhiddenImages = []
 }
